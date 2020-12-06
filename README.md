@@ -2,4 +2,7 @@
 Ссылка на датасет: https://www.kaggle.com/alexattia/the-simpsons-characters-dataset/download
 
 ## Текущие проблемы:
-Отсуствует requirements.txt
+Может отсутствовать часть библиотек / другая версия питона
+
+## Варианты исправления:
+Добавить requirements.txt
