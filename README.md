@@ -1,14 +1,12 @@
 # Reproductive_ML_HW
-Ссылка на датасет: https://www.kaggle.com/alexattia/the-simpsons-characters-dataset/download
-
-## Текущие проблемы:
-1) Может отсутствовать часть библиотек / другая версия питона
-2) Не сохраняются веса моделей
-3) Не задан seed (каждый раз веса будут генерироваться по-новому)
-4) Пути сильно захардкожены во многих местах
-
-## Варианты исправления:
-1) Добавить requirements.txt
-2) Добавить логику сохраения моделей
-3) Добавить seed
-4) Вынести как глобальную переменную
+## Инструкция по установке
+- Необходимая версия Python 3.8.5
+- Создать виртуальную среду при необходимости:
+  - conda create --name mlrepa python=3.8.5
+  - conda activate mlrepa
+- Выйти из виртуальной среды:
+  - conda deactivate
+- Установить requriments.txt:
+  - pip install -r requirements.txt 
+- Скачать датасет и разархивировать в папку data:
+  - https://www.kaggle.com/alexattia/the-simpsons-characters-dataset/download
