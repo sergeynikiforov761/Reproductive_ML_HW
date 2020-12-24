@@ -9,8 +9,8 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from src.plot import plot_confusion_matrix
 
 
-def runAnotherKerasAugmented(a, b, c, d, dict_characters):
-    epochs = 60
+def run_another_keras_augmented(a, b, c, d, dict_characters):
+    epochs = 2
     img_rows, img_cols = a.shape[1], a.shape[2]
     input_shape = (img_rows, img_cols, 3)
     model = Sequential()
