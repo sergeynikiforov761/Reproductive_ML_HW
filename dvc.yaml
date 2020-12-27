@@ -1,0 +1,3 @@
+stages:
+  feature_extraction:
+    cmd: C:\Users\Xiaomi\anaconda3\python.exe src\main.py --config_path params.yaml

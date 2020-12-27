@@ -1,11 +1,14 @@
-from src.data import *
-from src.model import run_another_keras_augmented
+import argparse
 
-if __name__ == "__main__":
-    config = load_yaml('../params.yaml')
+from data import *
+from model import run_another_keras_augmented
 
-    test_dir = '../' + config['test_set_dir']
-    train_dir = '../' + config['train_set_dir']
+
+def train_model(config_path):
+    config = load_yaml(config_path)
+
+    test_dir = config['test_set_dir']
+    train_dir = config['train_set_dir']
     num_classes = config['num_claases']
     img_size = config['img_size']
     model_save_weights_dir = config['model_weights_save_dir']
@@ -17,3 +20,11 @@ if __name__ == "__main__":
     model = run_another_keras_augmented(X_train, Y_train, X_test, Y_test, dict_characters)
     model.save(model_save_dir)
     model.save_weights(model_save_weights_dir)
+
+
+if __name__ == "__main__":
+    args_parser = argparse.ArgumentParser()
+    args_parser.add_argument('--config_path', dest='config_path', required=True)
+    args = args_parser.parse_args()
+
+    train_model(config_path=args.config_path)

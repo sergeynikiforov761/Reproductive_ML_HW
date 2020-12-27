@@ -2,5 +2,5 @@ test_set_dir: "data/kaggle_simpson_testset/kaggle_simpson_testset"
 train_set_dir: "data/simpsons_dataset"
 img_size: 64
 num_claases: 20
-model_weights_save_dir: "model/simpsons_model_wights.h5"
-model_save_dir: "model/simpsons_model.h5"
+model_weights_save_dir: "src/model/simpsons_model_wights.h5"
+model_save_dir: "src/model/simpsons_model.h5"
